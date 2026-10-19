@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя страница</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #222; }
+    header { background: #2d3a4b; color: white; padding: 16px 24px;
+             display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white; margin-left: 16px; text-decoration: none; }
+    .hero { background: #e8f0fe; text-align: center; padding: 80px 20px; }
+    .hero h1 { margin-bottom: 12px; }
+    .hero button { margin-top: 20px; padding: 10px 24px; border: none;
+                   background: #2d3a4b; color: white; border-radius: 6px; cursor: pointer; }
+    .cards { display: flex; gap: 20px; padding: 40px 24px; flex-wrap: wrap; }
+    .card { flex: 1; min-width: 220px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+    footer { background: #2d3a4b; color: white; text-align: center; padding: 16px; }
+  </style>
 </head>
 <body>
+  <header>
+    <h2>Логотип</h2>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
 
-<script src=""></script>
+  <section class="hero">
+    <h1>Добро пожаловать!</h1>
+    <p>Это очень простая верстка на HTML и CSS.</p>
+    <button>Начать</button>
+  </section>
+
+  <section class="cards">
+    <div class="card"><h3>Карточка 1</h3><p>Короткое описание.</p></div>
+    <div class="card"><h3>Карточка 2</h3><p>Короткое описание.</p></div>
+    <div class="card"><h3>Карточка 3</h3><p>Короткое описание.</p></div>
+  </section>
+
+  <footer>© 2026 Моя страница</footer>
 </body>
 </html>
